@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-top: 40px;
+}
+
+.logo {
+  background-color: white;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.logo svg {
+  height: 100%;
+  transform: rotate(0);
+}
+
+.logo svg:hover {
+  transform: rotate(360deg);
+  transition: all 0.3s;
+}
+
+.white-line {
+  background-color: #979797;
+  height: 1px;
+  width: 35%;
+  transform: translateX(60px);
+  z-index: 1;
+}
+
+.nav {
+  padding: 39px 165px 38px 123px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-color: rgba(155, 155, 155, 0.1);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Barlow Condensed";
+  color: white;
+  letter-spacing: 2.7px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.nav a span {
+  font-weight: 700;
+}
+
+.nav a::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #979797;
+  width: 50%;
+  opacity: 0;
+}
+
+.nav a:hover::after {
+  transition: all 0.8s ease;
+  width: 100%;
+  opacity: 1;
+}
