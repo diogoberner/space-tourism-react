@@ -78,3 +78,10 @@
   width: 100%;
   opacity: 1;
 }
+
+.nav a.active::after {
+  transition: all 0.8s ease;
+  opacity: 1;
+  width: 100%;
+  background-color: white;
+}
