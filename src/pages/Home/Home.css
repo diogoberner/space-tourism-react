@@ -1,4 +1,58 @@
 .home {
   background-image: url("./../../assets/home/background-home-desktop.jpg");
+  background-size: cover;
   height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 165px 131px 165px;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.hero-wrapper h1 {
+  margin: 24px 0;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 274px;
+  width: 274px;
+}
+
+.button-hover {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.button-wrapper:hover .button-hover {
+  opacity: 1;
+}
+
+.button-wrapper a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--dark-blue);
 }

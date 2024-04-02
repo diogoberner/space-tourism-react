@@ -1,4 +1,65 @@
 ::root {
+  --dark-blue: #0b0d17;
+  --light-blue: #d0d6f9;
+}
+
+.title1 {
+  font-family: "Bellefair", serif;
+  font-size: 150px;
+  color: #fff;
+}
+
+.title2 {
+  font-family: "Bellefair", serif;
+  font-size: 100px;
+  color: #fff;
+}
+
+.title3 {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  color: #fff;
+}
+
+.title4 {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  color: #fff;
+}
+
+.title5 {
+  font-family: "Barlow Condensed", serif;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.sub-title1 {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  color: #fff;
+}
+
+.sub-title2 {
+  font-family: "Barlow Condensed", serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: #fff;
+}
+
+.nav-text {
+  font-family: "Barlow Condensed", serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: #fff;
+}
+
+.body-text {
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
 }
 
 * {
