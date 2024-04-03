@@ -1,4 +1,33 @@
 .destination {
   background-image: url("./../../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 163px 112px 230px;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  margin-bottom: 78px;
+}
+
+.heading span {
+  position: absolute;
+  left: -56px;
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+}
+
+.planet-navbar {
+  align-self: flex-end;
+  display: flex;
+  gap: 36px;
+  margin-right: 163px;
+}
+
+.planet-wrapper {
+  padding: 0 164px 112px 230px;
 }

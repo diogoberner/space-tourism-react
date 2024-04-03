@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@
 .white-line {
   background-color: #979797;
   height: 1px;
-  width: 35%;
+  width: 50%;
   transform: translateX(60px);
   z-index: 1;
 }

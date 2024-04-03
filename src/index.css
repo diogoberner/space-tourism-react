@@ -53,6 +53,8 @@
   font-size: 16px;
   letter-spacing: 2.7px;
   color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .body-text {
