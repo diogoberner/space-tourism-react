@@ -2,29 +2,29 @@
   {
     "title": "Moon",
     "body": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites",
-    "avg-dist": "384,400 km",
-    "est-travel-time": "3 days",
-    "img": "../../assets/destination/image-moon.png"
+    "avgDist": "384,400 km",
+    "estTravelTime": "3 days",
+    "img": "assets/destination/image-moon.png"
   },
   {
     "title": "Mars",
     "body": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
-    "avg-dist": "225 mil. km",
-    "est-travel-time": "9 months",
-    "img": "../../assets/destination/image-mars.png"
+    "avgDist": "225 mil. km",
+    "estTravelTime": "9 months",
+    "img": "assets/destination/image-mars.png"
   },
   {
     "title": "Europa",
     "body": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
-    "avg-dist": "628 mil. km",
-    "est-travel-time": "3 years",
-    "img": "../../assets/destination/image-europa.png"
+    "avgDist": "628 mil. km",
+    "estTravelTime": "3 years",
+    "img": "assets/destination/image-europa.png"
   },
   {
     "title": "Titan",
     "body": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
-    "avg-dist": "1.6 bil. km",
-    "est-travel-time": "7 years",
-    "img": "../../assets/destination/image-titan.png"
+    "avgDist": "1.6 bil. km",
+    "estTravelTime": "7 years",
+    "img": "assets/destination/image-titan.png"
   }
 ]

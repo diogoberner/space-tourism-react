@@ -1,37 +1,42 @@
-::root {
+:root {
   --dark-blue: #0b0d17;
   --light-blue: #d0d6f9;
 }
 
 .title1 {
   font-family: "Bellefair", serif;
-  font-size: 150px;
+  font-size: clamp(5rem, 0.8254rem + 17.8117vw, 9.375rem);
   color: #fff;
+  font-weight: 400;
 }
 
 .title2 {
   font-family: "Bellefair", serif;
   font-size: 100px;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .title3 {
   font-family: "Bellefair", serif;
   font-size: 56px;
   color: #fff;
+  font-weight: 400;
 }
 
 .title4 {
   font-family: "Bellefair", serif;
   font-size: 32px;
   color: #fff;
+  font-weight: 400;
 }
 
 .title5 {
   font-family: "Barlow Condensed", serif;
   font-size: 28px;
   letter-spacing: 4.72px;
-  color: #fff;
+  color: var(--light-blue);
   font-weight: 400;
 }
 
@@ -39,13 +44,16 @@
   font-family: "Bellefair", serif;
   font-size: 28px;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .sub-title2 {
   font-family: "Barlow Condensed", serif;
   font-size: 14px;
   letter-spacing: 2.36px;
-  color: #fff;
+  color: var(--light-blue);
+  text-transform: uppercase;
 }
 
 .nav-text {
@@ -59,9 +67,10 @@
 
 .body-text {
   font-family: "Barlow";
-  font-size: 18px;
+  font-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
   line-height: 32px;
-  color: #fff;
+  color: var(--light-blue);
+  font-weight: 400;
 }
 
 * {

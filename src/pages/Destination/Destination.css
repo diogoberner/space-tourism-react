@@ -1,7 +1,8 @@
+.destination-bg {
+  background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+}
+
 .destination {
-  background-image: url("./../../assets/destination/background-destination-desktop.jpg");
-  background-size: cover;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -26,8 +27,4 @@
   display: flex;
   gap: 36px;
   margin-right: 163px;
-}
-
-.planet-wrapper {
-  padding: 0 164px 112px 230px;
 }

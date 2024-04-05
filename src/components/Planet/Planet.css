@@ -1,0 +1,32 @@
+.planet-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planet-info-wrapper {
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+}
+
+.planet-info-wrapper h2 {
+  margin: 37px 0 14px 0;
+}
+
+.planet-text {
+  padding-bottom: 54px;
+  border-bottom: 1px solid #383b4b;
+  margin-bottom: 28px;
+}
+
+.travel-wrapper {
+  display: flex;
+  gap: 79px;
+}
+
+.dist-info,
+.travel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
