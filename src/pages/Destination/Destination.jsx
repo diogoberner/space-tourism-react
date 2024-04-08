@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import "./Destination.css";
@@ -8,9 +7,13 @@ import Planet from "../../components/Planet/Planet";
 
 const Destination = () => {
   const [planet, setPlanet] = useState(planetsJson[0]);
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleClick = (selectedTitle) => {
+    if (!selectedTitle) return;
+    const selectedPlanet = planetsJson.find((p) => p.title === selectedTitle);
+    if (!selectedPlanet || selectedPlanet === planet) return;
+    setPlanet(selectedPlanet);
   };
+
   return (
     <section className="destination">
       <div className="heading title5">
@@ -18,10 +21,16 @@ const Destination = () => {
       </div>
       <nav className="planet-navbar">
         {planetsJson ? (
-          planetsJson.map((planet, index) => (
-            <Link key={index} className="nav-text" onClick={handleClick}>
-              {planet.title}
-            </Link>
+          planetsJson.map((p) => (
+            <span
+              key={p.title}
+              className={
+                planet.title === p.title ? "nav-text active" : "nav-text"
+              }
+              onClick={() => handleClick(p.title)}
+            >
+              {p.title}
+            </span>
           ))
         ) : (
           <p>Carregando...</p>

@@ -3,6 +3,12 @@
   --light-blue: #d0d6f9;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .title1 {
   font-family: "Bellefair", serif;
   font-size: clamp(5rem, 0.8254rem + 17.8117vw, 9.375rem);
@@ -54,6 +60,7 @@
   letter-spacing: 2.36px;
   color: var(--light-blue);
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .nav-text {
@@ -63,6 +70,7 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .body-text {
@@ -73,8 +81,9 @@
   font-weight: 400;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.container {
+  min-height: 100vh;
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto 1fr;
 }

@@ -24,14 +24,7 @@ function App() {
   const appBackgroundClass = getClassForRoute(currentRoute);
 
   return (
-    <div
-      className={`App ${appBackgroundClass}`}
-      style={{
-        minHeight: "100vh",
-        display: "grid",
-        gridTemplateRows: "auto 1fr",
-      }}
-    >
+    <div className={`container ${appBackgroundClass}`}>
       <Navbar />
 
       <Routes>

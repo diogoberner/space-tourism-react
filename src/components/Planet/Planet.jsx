@@ -1,8 +1,6 @@
 import "./Planet.css";
 
 const Planet = ({ planet }) => {
-  console.log(planet.img);
-  // const planetImg = require(planet.img);
   return (
     <div className="planet-wrapper">
       <div className="img-container">
