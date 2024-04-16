@@ -44,6 +44,7 @@
   letter-spacing: 4.72px;
   color: var(--light-blue);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .sub-title1 {

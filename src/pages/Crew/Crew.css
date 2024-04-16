@@ -1,3 +1,12 @@
 .crew-bg {
   background-image: url("/src/assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.crew {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
