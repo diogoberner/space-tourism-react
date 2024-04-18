@@ -82,6 +82,30 @@
   font-weight: 400;
 }
 
+.mobile-subtitle2 {
+  font-family: "Bellefair", serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.mobile-subtitle1 {
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  color: rgba(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.mobile-body-text {
+  font-family: "Barlow";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--light-blue);
+  font-weight: 400;
+}
+
 .container {
   min-height: 100vh;
   display: grid;

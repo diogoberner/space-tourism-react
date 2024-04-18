@@ -79,7 +79,7 @@ const Navbar = () => {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className={isOpen === true ? "no-hamburguer" : "hamburguer"}
+        className={isOpen === true ? "no-hamburger" : "hamburger"}
       >
         <Hamburger />
       </div>

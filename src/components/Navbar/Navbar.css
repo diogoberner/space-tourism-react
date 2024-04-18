@@ -80,10 +80,10 @@
 }
 
 .hamburger {
-  color: white;
+  display: none;
 }
 
-.no-hamburguer {
+.no-hamburger {
   display: none;
 }
 
@@ -124,5 +124,9 @@
 
   .nav a:first-child {
     margin-top: 118px;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }

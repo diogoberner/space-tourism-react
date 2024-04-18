@@ -1,0 +1,79 @@
+.person-container {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "img"
+    "nav"
+    "text";
+  justify-items: center;
+  padding: 24px 24px 0 24px;
+}
+
+.page-heading {
+  grid-area: title;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.page-heading span {
+  position: absolute;
+  left: -36px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.person-img {
+  grid-area: img;
+  position: relative;
+  height: clamp(13.938rem, 6.344rem + 32.398vw, 21.875rem);
+}
+
+.person-img img {
+  height: 100%;
+}
+
+.person-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80vw;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: #383b4b;
+}
+
+.person-nav {
+  grid-area: nav;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 32px;
+}
+
+.nav-circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.17);
+  cursor: pointer;
+}
+
+.nav-circle.selected {
+  background-color: white;
+}
+
+.person-text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.person-text span:first-child {
+  margin-bottom: 8px;
+}
+
+.person-text p {
+  margin-top: 16px;
+}
