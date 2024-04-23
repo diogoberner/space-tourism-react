@@ -15,3 +15,11 @@
     background-position: center;
   }
 }
+
+@media (768px <= width <= 1366px) {
+  .crew-bg {
+    background-image: url("/src/assets/crew/background-crew-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}

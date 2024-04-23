@@ -87,7 +87,7 @@
   display: none;
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .header {
     width: 100vw;
     padding: 24px 24px 0 24px;
@@ -128,5 +128,24 @@
 
   .hamburger {
     display: flex;
+  }
+}
+
+@media (768px <= width <= 1440px) {
+  .header {
+    padding: 0 0 0 39px;
+  }
+
+  .nav {
+    gap: 37px;
+    padding: 40px 48px;
+  }
+
+  .nav a span {
+    display: none;
+  }
+
+  .white-line {
+    display: none;
   }
 }

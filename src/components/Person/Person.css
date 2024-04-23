@@ -77,3 +77,57 @@
 .person-text p {
   margin-top: 16px;
 }
+
+@media (width >= 768px) {
+  .person-container {
+    height: 100%;
+    grid-template-areas:
+      "title"
+      "text"
+      "nav"
+      "img";
+    grid-template-rows: 13.36% 19.6% 9.7% 57.32%;
+  }
+
+  .person-img {
+    height: 100%;
+  }
+
+  .person-img::after {
+    display: none;
+  }
+
+  .person-container {
+    padding: 0;
+  }
+
+  .page-heading {
+    margin: 0;
+    align-content: center;
+    justify-self: flex-start;
+    margin-left: 77px;
+    font-size: 20px;
+  }
+
+  .person-nav {
+    padding: 0;
+    align-items: center;
+  }
+
+  .person-text {
+    justify-content: center;
+  }
+
+  .person-text span:first-child {
+    font-size: 28px;
+  }
+
+  .person-text span {
+    font-size: 40px;
+  }
+
+  .mobile-body-text {
+    font-size: 16px;
+    max-height: 84px;
+  }
+}
