@@ -134,17 +134,64 @@
 
 @media (width >= 1440px) {
   .person-container {
+    grid-template-rows: 20% auto 20%;
+  }
+  .page-heading {
+    font-size: 28px;
+    letter-spacing: 4.86px;
+    justify-self: flex-start;
+    position: static;
+  }
+
+  .page-heading span {
+    position: static;
+    margin-right: 20px;
+  }
+
+  .person-text {
+    justify-self: flex-start;
+    text-align: left;
+    align-self: center;
+  }
+
+  .person-nav {
+    justify-self: flex-start;
+    padding: 0;
+    align-self: center;
+  }
+
+  .nav-circle {
+    height: 15px;
+    width: 15px;
+  }
+
+  .mobile-subtitle2 {
+    font-size: 32px;
+  }
+
+  .mobile-subtitle1 {
+    font-size: 56px;
+  }
+
+  .mobile-body-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .person-container {
     height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "title img"
       "text img"
       "nav img";
-    padding: 76px 90px 0 90px;
+    padding: 76px 165px 0 165px;
   }
 
   .person-img {
-    height: 100%;
+    max-height: 100%;
+    min-height: 85%;
+    align-self: flex-end;
   }
 
   .person-img::after {
