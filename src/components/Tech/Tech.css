@@ -1,0 +1,43 @@
+.tech-container {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "img"
+    "nav"
+    "text";
+  grid-template-rows: 10.56% 23.94% 14.08% auto;
+  height: 100%;
+  justify-items: center;
+}
+
+.tech-title {
+  align-content: center;
+  grid-area: title;
+}
+
+.tech-img-wrapper {
+  grid-area: img;
+}
+
+.tech-img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.tech-nav {
+  align-self: center;
+  display: flex;
+  gap: 16px;
+  grid-area: nav;
+}
+
+.tech-item {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

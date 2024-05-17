@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import "./Tech.css";
 
 const Tech = ({ tech }) => {
+  console.log(tech);
+
   const [selectedTech, setSelectedTech] = useState(tech ? tech[0] : null);
 
   useEffect(() => {
@@ -30,17 +32,22 @@ const Tech = ({ tech }) => {
               alt={selectedTech.name}
             />
           </div>
-          <nav className="techNav">
+          <nav className="tech-nav">
             {tech.map((item, index) => (
               <div
                 key={index}
-                className="techItem"
+                className="tech-item"
                 onClick={() => handleTechSelect(index)}
               >
                 {index + 1}
               </div>
             ))}
           </nav>
+          <div className="tech-info">
+            <div className="tech-title">The Terminology...</div>
+            <div className="tech-name">{selectedTech.name}</div>
+            <div className="tech-desc">{selectedTech.description}</div>
+          </div>
         </>
       ) : (
         <>Loading...</>
